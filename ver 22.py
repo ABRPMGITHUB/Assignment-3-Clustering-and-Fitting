@@ -80,7 +80,7 @@ def norm_df(df, first=0, last=None):
     df[col] = norm(df[col])
   return df
 
-# extract columns for fitting
+# extract columns to fit
 df_fit = df[["1990 [YR1990]", "2000 [YR2000]"]].copy()
 # normalise dataframe and inspect result. Normalisation is done only on the extracted columns. .copy() prevents
 # changes in df_fit to affect df. This make the plots with the original measurements possible
